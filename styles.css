@@ -312,9 +312,9 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .date {
-    bottom: 50px;
+    bottom: 100px;
     left: 10px;
     right: 10px;
     height: 75px;
@@ -322,12 +322,15 @@ body {
     font-size: 20px;
     transform: translate(-50% -50%);
   }
+  .tiles {
+    top: 16rem;
+  }
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media  (min-width: 481px) and (max-width: 767px) {
   .date {
-    bottom: 50px;
+    bottom: 175px;
     left: 10px;
     right: 10px;
     height: 75px;
@@ -335,16 +338,22 @@ body {
     font-size: 20px;
     transform: translate(-50% -50%);
   }
+  .tiles {
+    top: 15rem;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .date {
-    bottom: 50px;
+    bottom: 175px;
     left: 10px;
     right: 10px;
     height: 75px;
     width: auto;
     font-size: 20px;
     transform: translate(-50% -50%);
+  }
+  .tiles {
+    top: 20rem;
   }
 }
