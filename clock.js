@@ -45,11 +45,11 @@ function timeNow() {
 
   if (h >= 6 && ampm === "PM") {
     bodyEl.style.backgroundImage =
-      "url('night.svg')";
+      "url('images/night.svg')";
     
   } else {
     bodyEl.style.backgroundImage =
-      "url('sunrise.png')";
+      "url('images/sunrise.png')";
   };
 
   hrsEl.innerHTML = h;
