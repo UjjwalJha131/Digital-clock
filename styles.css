@@ -317,43 +317,44 @@ body {
     bottom: 100px;
     left: 10px;
     right: 10px;
-    height: 75px;
-    width: auto;
-    font-size: 20px;
+    height: 95px;
+    width: 395px;
+    font-size: 25px;
     transform: translate(-50% -50%);
   }
   .tiles {
-    top: 16rem;
+    top: 7rem;
   }
 }
 
 
-@media  (min-width: 481px) and (max-width: 767px) {
+@media  (min-width: 481px) and (max-width: 765px) {
   .date {
-    bottom: 175px;
+    width: 300px;
+    bottom: 0px;
     left: 10px;
     right: 10px;
     height: 75px;
     width: auto;
-    font-size: 20px;
+    font-size: 30px;
     transform: translate(-50% -50%);
   }
   .tiles {
-    top: 15rem;
+    top: 7rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .date {
     bottom: 175px;
-    left: 10px;
-    right: 10px;
-    height: 75px;
+    left: 50px;
+    right: 50px;
+    height: 85px;
     width: auto;
-    font-size: 20px;
+    font-size: 35px;
     transform: translate(-50% -50%);
   }
   .tiles {
-    top: 20rem;
+    top: 7rem;
   }
 }

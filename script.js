@@ -45,7 +45,7 @@ function timeNow() {
 
   if (h >= 6 && ampm === "PM") {
     bodyEl.style.backgroundImage =
-      "url('images/night.svg')";
+      "url('images/aurora.jpg')";
     
   } else {
     bodyEl.style.backgroundImage =
