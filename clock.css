@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  position: relative;
+  background-position: 100 20;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.tiles {
+  position: absolute;
+  transform: translate(-50% -50%);
+  top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border-radius: 50px;
+  border: none;
+  box-shadow: none !important;
+
+}
+
+.Hours {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-right: 2rem;
+  font-size: 4rem;
+  color: white;
+  animation: hour 5s linear infinite alternate;
+  box-shadow: 2px 2px 10px black, -2px -2px 3px black;
+}
+
+@keyframes hour {
+  0% {
+    box-shadow: inset 5px 5px 8px #523e1d, inset -5px -1px 8px #523e1d;
+
+  }
+
+  25% {
+    box-shadow: inset 5px 1px 8px #eed2a6, inset -5px -1px 8px #eed2a6;
+  }
+
+  50% {
+    box-shadow: inset 5px 1px 8px #eedfc8, inset -5px -1px 8px #eedfc8;
+  }
+
+  75% {
+    box-shadow: inset 5px 1px 8px #ebe2d3, inset -5px -1px 8px #ebe2d3;
+  }
+
+  100% {
+    box-shadow: inset 5px 1px 8px ghostwhite, inset -5px -1px 8px ghostwhite;
+  }
+}
+
+.Minutes {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 9rem;
+  width: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  margin-right: 2rem;
+  margin-top: 0.3rem;
+  font-size: 3.2rem;
+  color: white;
+  animation: minute 5s linear infinite alternate;
+
+}
+
+@keyframes minute {
+  0% {
+    box-shadow: inset 5px 1px 8px #523e1d, inset -5px -1px 8px #523e1d;
+
+  }
+
+  25% {
+    box-shadow: inset 5px 1px 8px #eed2a6, inset -5px -1px 8px #eed2a6;
+  }
+
+  50% {
+    box-shadow: inset 5px 1px 8px #eedfc8, inset -5px -1px 8px #eedfc8;
+  }
+
+  75% {
+    box-shadow: inset 5px 1px 8px #ebe2d3, inset -5px -1px 8px #ebe2d3;
+  }
+
+  100% {
+    box-shadow: inset 5px 1px 8px ghostwhite, inset -5px -1px 8px ghostwhite;
+  }
+}
+
+.Seconds {
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 2.6rem;
+  color: ghostwhite;
+  animation: second 5s linear infinite alternate;
+
+}
+
+@keyframes second {
+  0% {
+    box-shadow: inset 5px 1px 8px #523e1d, inset -5px -1px 8px #523e1d;
+
+  }
+
+  25% {
+    box-shadow: inset 5px 1px 8px #eed2a6, inset -5px -1px 8px #eed2a6;
+  }
+
+  50% {
+    box-shadow: inset 5px 1px 8px #eedfc8, inset -5px -1px 8px #eedfc8;
+  }
+
+  75% {
+    box-shadow: inset 5px 1px 8px #ebe2d3, inset -5px -1px 8px #ebe2d3;
+  }
+
+  100% {
+    box-shadow: inset 5px 1px 8px ghostwhite, inset -5px -1px 8px ghostwhite;
+  }
+}
+
+.AmPm {
+  margin-left: 1rem;
+  color: ghostwhite;
+}
+
+.hourstext {
+  font-size: 2rem;
+  padding-bottom: 1.7rem;
+  color: ghostwhite;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.minstext {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+  padding-left: 0.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: ghostwhite;
+  font-weight: bolder;
+  margin-top: 0rem;
+}
+
+.sectext {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 0.2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: ghostwhite;
+}
+
+.ampmtext {
+  font-size: 1.5rem;
+  color: ghostwhite;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .tiles {
+    padding: 20px;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80vw;
+  }
+
+  .Hours {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .Minutes {
+    margin-right: 0;
+  }
+
+  .AmPm {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .tiles {
+    padding: 20px;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vw;
+  }
+
+  .Hours {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .Minutes {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .AmPm {
+    margin: 0;
+  }
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: auto;
+  right: 18rem;
+  padding: 20px;
+  border-radius: 10px;
+  color: ghostwhite;
+  font-size: 1.5rem;
+  animation: second 5s linear infinite alternate;
+
+}
+
+@keyframes second {
+  0% {
+    box-shadow: inset 5px 1px 8px #523e1d, inset -5px -1px 8px #523e1d;
+
+  }
+
+  25% {
+    box-shadow: inset 5px 1px 8px #eed2a6, inset -5px -1px 8px #eed2a6;
+  }
+
+  50% {
+    box-shadow: inset 5px 1px 8px #eedfc8, inset -5px -1px 8px #eedfc8;
+  }
+
+  75% {
+    box-shadow: inset 5px 1px 8px #ebe2d3, inset -5px -1px 8px #ebe2d3;
+  }
+
+  100% {
+    box-shadow: inset 5px 1px 8px ghostwhite, inset -5px -1px 8px ghostwhite;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .date {
+   bottom: 15px;
+   left: 10px;
+   right: 10px;
+    height: 75px;
+    width: auto;
+    font-size: 20px;
+    transform: translate(-50% -50%);
+  }
+}
