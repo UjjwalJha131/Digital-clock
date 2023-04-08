@@ -314,16 +314,16 @@ body {
 
 @media (max-width: 480px) {
   .date {
-    bottom: 100px;
+    bottom: 75px;
     left: 10px;
     right: 10px;
-    height: 95px;
-    width: 395px;
+    height: 75px;
+    width: auto;
     font-size: 25px;
     transform: translate(-50% -50%);
   }
   .tiles {
-    top: 7rem;
+    top: 4rem;
   }
 }
 
